@@ -17,6 +17,7 @@
             -ms-text-size-adjust: 100%;
             margin: 0;
             padding: 0;
+            font-family: Arial,Helvetica,sans-serif;
         }
 
         img {
@@ -31,6 +32,7 @@
 
         p {
             margin: 1em 0;
+            font-family: Arial,Helvetica,sans-serif;
         }
 
         table td {
@@ -43,88 +45,21 @@
             mso-table-rspace: 0pt;
         }
 
-
-
-        @media only screen and (max-device-width: 480px) {
-
-            /* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from linking other numbers that look like, but are not phone numbers.  Use these two blocks of code to "unstyle" any numbers that may be linked.  The second block gives you a class to apply with a span tag to the numbers you would like linked and styled.
-
-            Inspired by Campaign Monitor's article on using phone numbers in email: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/.
-
-            Step 1 (Step 2: line 224)
-            */
-            a[href^="tel"], a[href^="sms"] {
-                text-decoration: none;
-                color: black; /* or whatever your want */
-                pointer-events: none;
-                cursor: default;
-            }
-
-            .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important; /* or whatever your want */
-                pointer-events: auto;
-                cursor: default;
-            }
-        }
-
-            /* More Specific Targeting */
-
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-            /* You guessed it, ipad (tablets, smaller screens, etc) */
-
-            /* Step 1a: Repeating for the iPad */
-            a[href^="tel"], a[href^="sms"] {
-                text-decoration: none;
-                color: blue; /* or whatever your want */
-                pointer-events: none;
-                cursor: default;
-            }
-
-            .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important;
-                pointer-events: auto;
-                cursor: default;
-            }
-        }
-
-        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-            /* Put your iPhone 4g styles in here */
-        }
-
-            /* Following Android targeting from:
-            http://developer.android.com/guide/webapps/targeting.html
-            http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/  */
-        @media only screen and (-webkit-device-pixel-ratio:.75) {
-            /* Put CSS for low density (ldpi) Android layouts in here */
-        }
-
-        @media only screen and (-webkit-device-pixel-ratio:1) {
-            /* Put CSS for medium density (mdpi) Android layouts in here */
-        }
-
-        @media only screen and (-webkit-device-pixel-ratio:1.5) {
-            /* Put CSS for high density (hdpi) Android layouts in here */
-        }
-
-            /* end Android targeting */
     </style>
 
 </head>
 
-<body style="width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; font-family: Arial; ">
+<body style="width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; font-family: Arial,Helvetica,sans-serif; ">
 
 
-<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable"
-       style="margin:0; padding:0; width:100% !important; line-height: 100% !important;">
+<table cellpadding="0" cellspacing="0" border="0"  style="margin:0; padding:0; width:100% !important; line-height: 100% !important;">
     <tr>
         <td>
 
-            <table width="564" cellpadding="0" cellspacing="0" border="0" align="center" style="color: #685e5a; font-size:12px; line-height: 1.25; font-family: Arial;">
+            <table width="564" cellpadding="0" cellspacing="0" border="0" align="center" style="color: #685e5a; font-size:12px; line-height: 1.25; font-family: Arial,Helvetica,sans-serif;;">
                 <tr>
-                    <td style="background: #e5e5e5; padding: 0 21px;"  valign="top">
-                        <p style="color: #766a65; line-height: 27px; font-size:11px; margin: 0;">
+                    <td style="background: #e5e5e5; padding: 9px 21px;"  valign="top">
+                        <p style="color: #766a65; font-size:11px; margin: 0;">
                             Если информация на Вашем компьютере не отобразилась полностью, пройдите по
                             <a href="http://htmlemailboilerplate.com" target="_blank" title="Styling Links"
                                style="color: #981e32;">ссылке</a>
@@ -143,7 +78,7 @@
                         <table width="100%" cellpadding="0" cellspacing="0" border="0">
                             <tr>
                                 <td>
-                                    <a href="http://sub.ru">
+                                    <a href="http://htmlemailboilerplate.com">
                                         <img width="208" height="38" src="http://sub.docmov.ru/html-portfolio/x/imgs/logo.png" title="equifax" alt="equifax">
                                     </a>
                                 </td>
@@ -174,7 +109,7 @@
                         <table width="100%" cellpadding="0" cellspacing="0" border="0">
                             <tr>
 
-                                <td style="background: #ffffff; padding-left:21px;" valign="top">
+                                <td style="background: #fdedc0; padding-left:21px;" valign="top">
 
                                     <p style="color:#aa0336;
                                      font-size:16px;
@@ -185,21 +120,20 @@
                                      margin-top: 20px;
                                      margin-bottom: 3px;
                                      ">
-                                        Акция «Новогоднее <br> предложение»
+                                        Акция «Новогоднее предложение»
                                     </p>
 
                                     <p style="
                                     margin: 0; margin-bottom: 18px;
                                     color: #685e5a; font-size:12px; line-height: 1.25;
-                                    ">На новый год принято дарить подарки - мы <br>
-                                        решили порадовать вас, наших любимых <br>
+                                    ">На новый год принято дарить подарки - мы решили порадовать вас, наших любимых
                                         клиентов. Три новых продукта нашего <br>
                                         сервиса - для вас БЕСПЛАТНО!</p>
-                                    <a href="/sadas/">
+                                    <a href="http://htmlemailboilerplate.com">
                                         <img src="http://sub.docmov.ru/html-portfolio/x/imgs/btn-more.png" alt="">
                                     </a>
                                 </td>
-                                <td style="background: #ffffff;" width="1" valign="top">
+                                <td style="background: #fdedc0;" width="1" valign="top">
                                     <img width="199" height="199" style="display: block;" src="http://sub.docmov.ru/html-portfolio/x/imgs/img2.jpg" alt="new Year">
                                 </td>
                             </tr>
@@ -212,7 +146,7 @@
                             <tr>
                                 <td width="21" valign="top"></td>
                                 <td valign="top">
-                                    <p style="color: #766a65; font-weight: bold; line-height: 1; font-size: 14px; margin: 0; margin-top: 22px; margin-bottom: 5px;">
+                                    <p style="color: #766a65; font-weight: bold; line-height: 1; font-size: 14px; margin: 0; margin-top: 20px; margin-bottom: 5px;">
                                         <b>Дорогой пользователь!</b>
                                     </p>
 
@@ -259,7 +193,7 @@
                                         портфеле, и сможете оперативно реагировать на эти изменения.
                                     </p>
                                     <p style="margin: 0 ; margin-top: 15px;">
-                                        <a href="sadasd"><img src="http://sub.docmov.ru/html-portfolio/x/imgs/btn-more2.png" alt="Подробнее"></a>
+                                        <a href="http://htmlemailboilerplate.com"><img src="http://sub.docmov.ru/html-portfolio/x/imgs/btn-more2.png" alt="Подробнее"></a>
                                     </p>
                                 </td>
                             </tr>
@@ -275,7 +209,7 @@
                             <tr>
                                 <td width="21" valign="top"></td>
 
-                                <td width="252" valign="top" style="padding-right: 19px;">
+                                <td width="252" valign="top" style="padding-right: 21px;">
                                     <p style="margin: 0; margin-bottom: 7px; color: #981e32; font-size:14px; line-height: 1.25; font-weight:bold;">
                                         Почему надо проверят кредитную
                                         историю перед новым годом?
@@ -287,19 +221,21 @@
                                     <table cellpadding="0" cellspacing="0" border="0">
                                         <tr>
                                             <td style="padding-right:7px;" valign="top" width="1"><img style="display: block;" src="http://sub.docmov.ru/html-portfolio/x/imgs/read.jpg" width="14" height="15" alt=""></td>
-                                            <td valign="center">
-                                                <a style="color: #ac0433; font-size:11px; font-style:italic;" target="_blank" title="Styling Links" href="/read/">Читать!</a>
+                                            <td valign="top">
+                                                <a style="color: #ac0433; font-size:11px; font-style:italic;" target="_blank" title="Styling Links" href="http://htmlemailboilerplate.com">
+                                                    Читать!
+                                                </a>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
 
-                                <td  valign="top">
+                                <td width="252"  valign="top">
                                     <p style="margin: 0; margin-bottom: 7px; color: #981e32; font-size:14px; line-height: 1.25; font-weight:bold;">
                                         Подписки на кредитный отчет
                                     </p>
 
-                                    <p  style="font-size:12px; color: #685e5a; line-height: 1.25; margin: 0; margin-bottom: 12px;">
+                                    <p style="font-size:12px; color: #685e5a; line-height: 1.25; margin: 0; margin-bottom: 12px;">
                                         Обращаем Ваше внимание, что наш сервис предоставляет различные варианты
                                         получения кредитного отчета: бесплатный отчет (при первом обращении к услугам
                                         сервиса), платный кредитный отчет (если Вы решили проверить ваше кредитную
@@ -311,8 +247,10 @@
                                     <table cellpadding="0" cellspacing="0" border="0">
                                         <tr>
                                             <td style="padding-right:7px;" valign="top" width="1"><img style="display: block;" src="http://sub.docmov.ru/html-portfolio/x/imgs/read.jpg" width="14" height="15" alt=""></td>
-                                            <td valign="center">
-                                                <a style="color: #ac0433; font-size:11px; font-style:italic;" target="_blank" title="Styling Links" href="/read/">Подробнее!</a>
+                                            <td valign="top">
+                                                <a style="color: #ac0433; font-size:11px; font-style:italic;"  target="_blank" title="Styling Links" href="http://htmlemailboilerplate.com">
+                                                    Подробнее!
+                                                </a>
                                             </td>
                                         </tr>
                                     </table>
@@ -327,7 +265,7 @@
                         <p style="margin: 0; margin-bottom: 2px; font-size:14px; line-height: 1.14; color: #766a65; font-weight: bold;">
                             У Вас есть вопросы?
                         </p>
-                        <p style="margin: 0; margin-bottom: 20px;">
+                        <p style="margin: 0; margin-bottom: 20px; font-size: 12px; line-height: 1.25; color: #685e5a;">
                             Наша внимательная и отзывчивая Служба поддержки всегда рада ответить на все <br>
                             Ваши вопросы по телефону: +7 (495) 646-04-30 или по e-mail:
                             <a style="color: #981e32;" target="_blank" title="Отписаться" href="mailto:hotline@equifax.ru">hotline@equifax.ru</a>
@@ -355,7 +293,7 @@
                         </p>
                         <p style="font-size:10px; color: #685e5a; text-align: center; margin: 0; margin-bottom: 15px;">
                             Copyright 2012 OOO «Эквифакс Кредит Сервисиз» <br>
-                            Не хотите больше получать рассылку? <a style="color: #981e32;" target="_blank" title="Отписаться" href="/">Отписаться!</a>
+                            Не хотите больше получать рассылку? <a style="color: #981e32;" target="_blank" title="Отписаться" href="http://htmlemailboilerplate.com">Отписаться!</a>
                         </p>
 
                     </td>
